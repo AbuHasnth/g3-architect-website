@@ -70,10 +70,41 @@ nav li{
 
 
 
+
+/*style for team section*/
+
+main{
+    width: 1920px;
+    
+    background-color: #FFF;
+    margin: 70px auto;
+}
+
+.team-container{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1.5rem;
+   
+    
+}
+
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
 /*responsive style*/
 
 @media screen and (max-width:576px) {
-    nav{
+    nav,
+    .team-container
+    {
         flex-direction: column;
     }
 
@@ -88,22 +119,29 @@ nav li{
         width: 100%;
         
     }
-
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .team-container{
+        margin-right: 1500px;
+    }
+    .team-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     /*for medium devices like tab and pad*/
 
     @media screen and (min-width: 580px) and (max-width: 960px) {
+
+        header{
+            padding: 50px;
+        }
 
         nav{
             flex-direction: column;
         }
         
-    nav h1{
-        margin: 0 auto;
-    }
-
-    nav ul{
-        margin: 0 auto;
-    }
+    
     }
     
 }
