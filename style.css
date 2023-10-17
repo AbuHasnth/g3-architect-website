@@ -86,7 +86,7 @@ nav li{
 /*style for team section*/
 
 main{
-    width: 1920px;
+    width: auto;
     
     background-color: #FFF;
     margin: 70px auto;
@@ -95,6 +95,8 @@ main{
 .team-container{
     display: flex;
     align-items: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .teams-img-container{
@@ -130,6 +132,35 @@ height: 241.831px;
 
 .fact-card img{
     padding: 20px;
+}
+
+/*sty for feature container*/
+.feature-container{
+    width: 1920px;
+    height: 4760px;
+    background: #FFF;
+    display: flex;
+    margin-top: 50px;
+}
+
+.feature-container .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 40px;
+}
+
+.feature-image-container{
+    margin-left: 146px;
+}
+.feature-container{
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+.feature-card-containter h1{
+    border-left: 5px solid orange;
+    padding-left: 10px;
 }
 
 
@@ -207,7 +238,7 @@ height: 241.831px;
         grid-template-columns: 1fr;
     }
     .team-container{
-        margin-right: 1500px;
+        align-items: center;
     }
     .team-content{
         padding-left: 20px;
